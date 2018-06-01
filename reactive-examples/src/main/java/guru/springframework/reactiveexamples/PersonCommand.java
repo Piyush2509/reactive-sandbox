@@ -5,22 +5,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * Created by jt on 8/24/17.
+ * Created by piyush.b.kumar on May 31, 2018
  */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 public class PersonCommand {
 
-    public PersonCommand(Person person) {
-        this.firstName = person.getFirstName();
-        this.lastName = person.getLastName();
-    }
+	public PersonCommand(Person person) {
+		this.firstName = person.getFirstName();
+		this.lastName = person.getLastName();
+	}
 
-    private String firstName;
-    private String lastName;
+	private String firstName;
+	private String lastName;
 
-    public String sayMyName(){
-        return "My Name is " + firstName + " " + lastName + ".";
-    }
+	public String sayMyName() {
+		return "My Name is " + firstName + " " + lastName + ".";
+	}
+	
 }
